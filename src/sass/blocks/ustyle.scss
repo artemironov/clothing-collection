@@ -1,0 +1,16 @@
+#slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    &__item {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+    }
+    &__item img {
+        display: block;
+    }
+}
