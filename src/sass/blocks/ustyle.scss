@@ -2,8 +2,9 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url(../img/background.jpg) no-repeat;
-    background-size: cover;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     overflow: hidden;
     &__item {
         display: block;
@@ -12,5 +13,11 @@
     }
     &__item img {
         display: block;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #slider {
+        background-size: cover;
     }
 }

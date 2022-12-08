@@ -15,14 +15,23 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
 
 
 $(document).ready(function(){
-    $("#slider").owlCarousel({
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
         items: 1,
         loop: true,
         margin: 0,
+        dots: false,
         autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
+        autoplayTimeout: 10000,
+        autoplayHoverPause: false,
         animateIn: 'fadeIn',
         animateOut: 'fadeOut'
     });
+
+    owl.on('mousemove',function(){
+        owl.trigger('stop.owl.autoplay'); //this is main line to fix it
+        owl.trigger('play.owl.autoplay', 10000);
+    });
+    
+    
 });

@@ -6,7 +6,8 @@ $base-font-size: 22px;
     box-sizing: border-box;
 }
 
-.no-js .your-slider { overflow-x: auto; }
-.no-js .your-slider > div { float: none; }
+.no-js .owl-carousel {
+	display: block;
+}
 
 @import 'blocks/*.scss';
