@@ -13,6 +13,43 @@
     }
     &__item img {
         display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+    &__item picture {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+    }
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+        position: absolute;
+        top: 0;
+        width: 40px;
+        height: 80px;
+        margin-top: -40px;
+        background: #fff;
+        cursor: pointer;
+        font-size: 0;
+        z-index: 99;
+    }
+    .owl-nav .owl-prev {
+        left: 20px;
+        background-image: url(../img/left.png);
+        background-size: 100%;
+        background-position: center;
+    }
+    .owl-nav .owl-next {
+        right: 20px;
+        background-image: url(../img/right.png);
+        background-size: 100%;
+        background-position: center;
     }
 }
 

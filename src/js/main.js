@@ -20,9 +20,10 @@ $(document).ready(function(){
         items: 1,
         loop: true,
         margin: 0,
+        nav: true,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 10000,
+        autoplayTimeout: 15000,
         autoplayHoverPause: false,
         animateIn: 'fadeIn',
         animateOut: 'fadeOut'
