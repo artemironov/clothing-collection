@@ -33,6 +33,10 @@ $(document).ready(function(){
         owl.trigger('stop.owl.autoplay'); //this is main line to fix it
         owl.trigger('play.owl.autoplay', 10000);
     });
+
+
+    $("body").on("contextmenu", false);
+
     
     
 });
